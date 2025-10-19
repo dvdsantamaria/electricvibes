@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Electric Vibes | The Music</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-top">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img src="logo.webp" alt="Electric Vibes" width="844" height="234" />
+      </a>
+      <nav class="mainnav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#experience">Immersive Experience</a>
+        <a href="music.html">The Music</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container" style="text-align:center; max-width:720px;">
+        <h1 class="h1">Listen to Our Vibes</h1>
+        <p>
+          Check out our curated playlists right here! We've handpicked tracks that reflect the energy and
+          atmosphere we bring to every event. Whether you're looking for laid-back grooves or upbeat anthems,
+          our playlists give you a taste of the music that sets the tone for unforgettable moments.
+          Feel the vibe and get inspired!
+        </p>
+        <div style="margin-top:2.5rem;">
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0EEZnrg3vtPgHhqDejCkV3?utm_source=generator&theme=0" width="100%" height="704" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <h4 class="foot-h">Music that sets the mood</h4>
+        <small>Developed by <a href="https://www.doopux.com" target="_blank" rel="noopener">Doopux.com</a></small>
+      </div>
+      <div>
+        <h4 class="foot-h">Location</h4>
+        <p>Cremorne Point<br>2090, Sydney, NSW</p>
+      </div>
+      <div>
+        <h4 class="foot-h">Contact</h4>
+        <p>e-mail: <a href="mailto:electricvibesdjs@gmail.com">electricvibesdjs@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

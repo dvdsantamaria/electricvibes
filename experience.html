@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Electric Vibes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-top">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="logo.webp" alt="Electric Vibes" width="844" height="234" />
+      </a>
+      <nav class="mainnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="experience.html">Immersive Experience</a>
+        <a href="music.html">The Music</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <!-- AI Hero (full-bleed) -->
+  <section id="ai-hero" class="section ai-hero ai-hero--full">
+    <h1 class="ai-title-wide container">Introducing AI video crafting</h1>
+
+    <div class="ai-hero-frame">
+      <div class="ai-hero-copy">
+        <div class="container">
+          <p class="ai-lead">
+            At our studio, we offer a unique AI powered video generation service designed to
+            enhance your tracks with stunning visuals that resonate with your audience.
+            Whether you are looking for abstract art or story driven visuals, we provide
+            customized video solutions that match your music identity, at a low cost.
+          </p>
+        </div>
+      </div>
+
+      <div class="ai-hero-media">
+        <img
+          class="ai-hero-img"
+          src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=2000&h=1400&q=85"
+          alt="Explosive music visual concept" />
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Videos (filtros + grilla) -->
+  <section id="ai-video" class="section ai-videos">
+    <div class="container">
+
+      <nav id="filters" class="filter-row" aria-label="Video categories">
+        <button type="button" data-filter="all" class="is-active">All</button>
+        <button type="button" data-filter="ai">AI video storytelling</button>
+        <button type="button" data-filter="live">Live sessions</button>
+        <button type="button" data-filter="gigs">Gigs</button>
+      </nav>
+
+      <div id="video-grid" class="grid grid-2 grid-videos">
+        <article class="video-card" data-cat="ai">
+          <a href="https://vimeo.com/133690889" target="_blank" rel="noopener">
+            <img class="thumb" src="https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?auto=format&fit=crop&w=1200&h=675&q=80" alt="AI video storytelling frame 1">
+          </a>
+          <small class="meta">AI video storytelling</small>
+          <h3 class="video-title">Abu Simbel (AI assisted)</h3>
+        </article>
+
+        <article class="video-card" data-cat="ai">
+          <a href="https://vimeo.com/458343543" target="_blank" rel="noopener">
+            <img class="thumb" src="https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=1200&h=675&q=80" alt="AI video storytelling frame 2">
+          </a>
+          <small class="meta">AI video storytelling</small>
+          <h3 class="video-title">Frozen in Glass (AI assisted)</h3>
+        </article>
+
+        <article class="video-card" data-cat="ai">
+          <a href="https://vimeo.com/357274789" target="_blank" rel="noopener">
+            <img class="thumb" src="https://images.unsplash.com/photo-1614854262399-5f1a5041cf50?auto=format&fit=crop&w=1200&h=675&q=80" alt="AI video storytelling frame 3">
+          </a>
+          <small class="meta">AI video storytelling</small>
+          <h3 class="video-title">Ultra</h3>
+        </article>
+
+        <article class="video-card" data-cat="gigs">
+          <a href="https://vimeo.com/148751763" target="_blank" rel="noopener">
+            <img class="thumb" src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&h=675&q=80" alt="Gig live performance">
+          </a>
+          <small class="meta">Gigs</small>
+          <h3 class="video-title">Live from Bunker House Gerringong</h3>
+        </article>
+
+        <article class="video-card" data-cat="live">
+          <a href="https://vimeo.com/76979871" target="_blank" rel="noopener">
+            <img class="thumb" src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&h=675&q=80" alt="Live session duo">
+          </a>
+          <small class="meta">Live sessions</small>
+          <h3 class="video-title">DAX Musique (Sydney Side Sessions)</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <h4 class="foot-h">Music that sets the mood</h4>
+        <small>Developed by Doopux.com</small>
+      </div>
+      <div>
+        <h4 class="foot-h">Location</h4>
+        <p>Cremorne Point<br>2090, Sydney, NSW</p>
+      </div>
+      <div>
+        <h4 class="foot-h">Contact</h4>
+        <p>e-mail: <a href="mailto:electricvibesdjs@gmail.com">electricvibesdjs@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
