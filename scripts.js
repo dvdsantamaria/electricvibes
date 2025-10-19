@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('#filters button');
   const items = document.querySelectorAll('#video-grid .video-card');
 
+  if (!buttons.length) {
+    return;
+  }
+
   function applyFilter(filter) {
     items.forEach(card => {
       const cat = card.getAttribute('data-cat');
