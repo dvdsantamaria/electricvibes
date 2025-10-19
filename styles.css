@@ -347,16 +347,30 @@ a{color:inherit;text-decoration:none}
 /* ========== AI VIDEOS (gris full-width) ========== */
 .ai-videos{
   background:var(--paper);
-  padding-top:0;                 /* sin margen entre hero y gris */
+  padding-top:clamp(56px,8vw,112px);
   padding-bottom:72px;
-  margin-top:-1px;               /* mata cualquier seam por subpixel */
+  margin-top:0;
 }
 
 /* grilla y cards */
-.grid-videos{gap:36px}
+.grid-videos{gap:48px}
 .thumb{width:100%;aspect-ratio:16/9;object-fit:cover}
-.meta{display:block;margin-top:6px;color:var(--muted)}
-.video-title{margin:4px 0 0;font-size:20px;line-height:1.3}
+.meta{
+  display:block;
+  margin:22px 0 12px;
+  font-size:16px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+  color:rgba(0,0,0,.6);
+}
+.video-title{
+  margin:0;
+  font-size:clamp(26px,3.2vw,40px);
+  line-height:1.15;
+  font-family:"Space Grotesk",system-ui,-apple-system,"Inter",sans-serif;
+  font-weight:700;
+}
 
 /* ========== Responsive ========== */
 @media (max-width:1100px){
@@ -383,6 +397,11 @@ a{color:inherit;text-decoration:none}
     padding:clamp(56px,18vw,96px) 24px clamp(72px,20vw,112px);
     align-items:flex-start;
   }
+  .grid-videos{gap:36px}
+  .meta{margin:18px 0 10px}
+}
+@media (max-width:600px){
+  .video-title{font-size:clamp(22px,7vw,30px)}
 }
 @media (max-width:768px){
   .grid-2,.grid-3{grid-template-columns:1fr}
