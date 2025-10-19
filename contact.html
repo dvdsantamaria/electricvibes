@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Electric Vibes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-top">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="logo.webp" alt="Electric Vibes" width="844" height="234" />
+      </a>
+      <nav class="mainnav">
+        <a href="about.html">About</a>
+        <a href="experience.html">Immersive Experience</a>
+        <a href="music.html">The Music</a>
+        <a href="contact.html" class="is-current">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="Menu" onclick="document.body.classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="contact-frame">
+        <div class="contact-form-column">
+          <div class="contact-copy">
+            <h1 class="contact-title">Contact Us</h1>
+            <p class="contact-lead">
+              Looking to add the perfect soundtrack to your next event? Get in touch with us, and we'll work
+              together to create a memorable atmosphere that your guests will love.
+            </p>
+            <a class="contact-email" href="mailto:electricvibesdjs@gmail.com">electricvibesdjs@gmail.com</a>
+            <p class="contact-phone">0475 718 069</p>
+          </div>
+          <form class="contact-form" action="https://submit-form.com/LviGtLTce" method="POST">
+            <fieldset class="field-group">
+              <legend class="field-label">Name <span>(required)</span></legend>
+              <div class="field-pair">
+                <label class="field field--split">
+                  <span class="field-caption">First Name</span>
+                  <input type="text" name="firstName" required />
+                </label>
+                <label class="field field--split">
+                  <span class="field-caption">Last Name</span>
+                  <input type="text" name="lastName" required />
+                </label>
+              </div>
+            </fieldset>
+            <label class="field">
+              <span class="field-label">Email <span>(required)</span></span>
+              <input type="email" name="email" required />
+            </label>
+            <label class="field">
+              <span class="field-label">Message <span>(required)</span></span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button type="submit" class="btn contact-btn">SEND</button>
+          </form>
+        </div>
+        <div class="contact-media">
+          <img src="piano.webp" alt="Hands playing a keyboard under stage lights" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container grid grid-3">
+      <div>
+        <h4 class="foot-h">Music that sets the mood</h4>
+        <small>Developed by Doopux.com</small>
+      </div>
+      <div>
+        <h4 class="foot-h">Location</h4>
+        <p>Cremorne Point<br>2090, Sydney, NSW</p>
+      </div>
+      <div>
+        <h4 class="foot-h">Contact</h4>
+        <p>e-mail: <a href="mailto:electricvibesdjs@gmail.com">electricvibesdjs@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts.js" defer></script>
+</body>
+</html>
